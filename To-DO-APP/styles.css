@@ -1,0 +1,98 @@
+ body {
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* Glassmorphism container */
+    .todo-container {
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+      padding: 25px;
+      width: 100%;
+      max-width: 520px;
+      color: white;
+    }
+
+    h3 {
+      color: white;
+      font-weight: 600;
+    }
+
+    /* Inputs glass style */
+    .form-control {
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      color: white;
+      backdrop-filter: blur(10px);
+    }
+
+    .form-control::placeholder {
+      color: #ddd;
+    }
+
+    .form-control:focus {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      box-shadow: none;
+      border-color: rgba(255,255,255,0.4);
+    }
+
+    /* Button */
+    .btn-primary {
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      backdrop-filter: blur(10px);
+    }
+
+    .btn-primary:hover {
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    /* Todo items glass */
+    .todo-item {
+      backdrop-filter: blur(10px);
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 12px;
+      border-radius: 12px;
+      margin-bottom: 10px;
+      transition: 0.3s;
+      display: flex;
+      flex-direction: column;
+      color: white;
+    }
+
+    .todo-item.completed {
+      text-decoration: line-through;
+      opacity: 0.6;
+    }
+
+    .todo-item:hover {
+      background: rgba(255, 255, 255, 0.25);
+    }
+
+    .todo-top {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+    }
+
+    .todo-date {
+      font-size: 12px;
+      color: #ddd;
+    }
+
+    .btn-delete {
+      border: none;
+      background: transparent;
+      color: #ff6b6b;
+      font-size: 18px;
+    }
